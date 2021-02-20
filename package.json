@@ -1,6 +1,6 @@
 {
   "name": "coc-htmlhint",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Integrates the HTMLHint static analysis tool into coc.nvim",
   "author": "yaegassy <yosstools@gmail.com>",
   "license": "MIT",
