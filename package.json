@@ -9,7 +9,8 @@
     "coc.nvim",
     "vim",
     "neovim",
-    "html"
+    "html",
+    "htmlhint"
   ],
   "engines": {
     "coc": "^0.0.80"
