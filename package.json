@@ -1,0 +1,82 @@
+{
+  "name": "coc-htmlhint",
+  "version": "0.0.1",
+  "description": "Integrates the HTMLHint static analysis tool into coc.nvim",
+  "author": "yaegassy <yosstools@gmail.com>",
+  "license": "MIT",
+  "main": "lib/client/index.js",
+  "keywords": [
+    "coc.nvim",
+    "vim",
+    "neovim",
+    "html"
+  ],
+  "engines": {
+    "coc": "^0.0.80"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yaegassy/coc-htmlhint"
+  },
+  "scripts": {
+    "lint": "eslint src --ext ts",
+    "clean": "rimraf lib",
+    "watch": "node esbuild.js --watch",
+    "build": "node esbuild.js",
+    "prepare": "npm-run-all clean build"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 120,
+    "semi": true
+  },
+  "activationEvents": [
+    "onLanguage:html"
+  ],
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "coc-htmlhint configuration",
+      "properties": {
+        "htmlhint.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "Control whether htmlhint is enabled for HTML files or not."
+        },
+        "htmlhint.documentSelector": {
+          "type": "array",
+          "default": [
+            "html",
+            "htm"
+          ],
+          "description": "The associated document types to be linted."
+        },
+        "htmlhint.options": {
+          "type": "object",
+          "default": {},
+          "description": "The htmlhint options object to provide args to the htmlhint command."
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^6.14.13",
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
+    "@typescript-eslint/parser": "^4.8.2",
+    "coc.nvim": "^0.0.80",
+    "esbuild": "^0.8.42",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "fs": "^0.0.2",
+    "htmlhint": "^0.11.0",
+    "strip-json-comments": "^3.1.1",
+    "vscode-languageserver": "^3.4.0"
+  }
+}
