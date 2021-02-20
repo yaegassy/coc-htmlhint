@@ -30,8 +30,8 @@ export async function activate(context: ExtensionContext): Promise<void> {
   const extensionDocumentSelector: undefined | string[] | DocumentSelector = config.get<string[] | DocumentSelector>(
     'documentSelector'
   ) || [
-    { scheme: 'file', language: 'php' },
-    { scheme: 'untitled', language: 'php' },
+    { scheme: 'file', language: 'html' },
+    { scheme: 'untitled', language: 'html' },
   ];
 
   const clientOptions: LanguageClientOptions = {
