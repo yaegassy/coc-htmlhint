@@ -4,6 +4,8 @@
 
 Integrates the HTMLHint static analysis tool into [coc.nvim](https://github.com/neoclide/coc.nvim).
 
+<img width="780" alt="coc-htmlhint" src="https://user-images.githubusercontent.com/188642/108600922-232c3b00-73dd-11eb-911a-bee9984c50ab.png">
+
 ## Install
 
 `:CocInstall coc-htmlhint`
