@@ -45,6 +45,40 @@ If you'd like to modify the rules, you can provide a `.htmlhintrc` file in the r
 
 You can learn more about rule configuration at the HTMLHint [Usage page](https://github.com/htmlhint/HTMLHint/wiki/Usage).
 
+## Additional file types
+
+By default, HTMLHint will run on any files associated with the "html" language service (i.e., ".html" and ".htm" files). If you'd like to use the HTMLHint extension with additional file types, you have two options:
+
+### Option 1: Treating your file like any other html file
+
+Set `g:coc_filetype_map` in your `.vimrc` or `init.vim` file. `:h g:coc_filetype_map`
+
+**.vimrc/init.vim**:
+
+```
+let g:coc_filetype_map = {
+  \ 'htmldjango': 'html',
+  \ 'blade': 'html',
+  \ 'twig': 'html',
+  \ 'jst': 'html',
+  \ }
+```
+
+### Option 2: Associating HTMLHint extension with other file type
+
+For example, if you want HTMLHint to process `.twig` files, you would use `"twig"`. Note that with this configuration, **you need to open an html file first** to activate the HTMLHint extension. Otherwise, you won't see any linter errors, (the extension is hard-coded to activate when the html language service activates).
+
+**coc-settings.json**:
+
+```
+{
+  "htmlhint.documentSelector": [
+    "html",
+    "twig"
+  ]
+}
+```
+
 ## Thanks
 
 - [Microsoft/vscode-htmlhint](https://github.com/Microsoft/vscode-htmlhint) : The origin of this repository.
