@@ -303,10 +303,10 @@ color-name@~1.1.4:
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
-commander@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-5.1.0.tgz#46abbd1652f8e059bddaef99bbdcb2ad9cf179ae"
-  integrity sha512-P0CysNDQ7rtVw4QIQtm+MRxV66vKFSvlsQvGYXZWR3qFU0jlMKHZZZgw8e+8DSah4UDKMqnknRDQz+xuQXQ/Zg==
+commander@^8.3.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-8.3.0.tgz#4837ea1b2da67b9c616a67afbb0fafee567bca66"
+  integrity sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -739,14 +739,14 @@ hosted-git-info@^2.1.4:
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.8.tgz#7539bd4bc1e0e0a895815a2e0262420b12858488"
   integrity sha512-f/wzC2QaWBs7t9IYqB4T3sR1xviIViXJRJTWBlx2Gf3g0Xi5vI7Yy4koXQ1c9OYDGHN9sBy1DQ2AB8fqZBWhUg==
 
-htmlhint@^0.16.3:
-  version "0.16.3"
-  resolved "https://registry.yarnpkg.com/htmlhint/-/htmlhint-0.16.3.tgz#ad78363f8bfe80bcd5912fc5d148b4d39b7692c0"
-  integrity sha512-P32TvpHXs8fUDckr8KkDFLmefkDKUy1w5kQvZE3tRA33rMbxASupcXKeFYnJ2hobnaCSj5jLC81YN+uwcK6K9g==
+htmlhint@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/htmlhint/-/htmlhint-1.0.0.tgz#6330f81fdd97bcc69ccbf413a5958f6e6c99a29a"
+  integrity sha512-Z+8hVuoHHRoWRUMWE7ehtNVJbED/sbmIFN/azvNnBMliF9vgdTISdATUnPvA1Y5B6FV4tDPFCMrJ5+gvKIZ2rQ==
   dependencies:
     async "3.2.2"
     chalk "^4.1.2"
-    commander "5.1.0"
+    commander "^8.3.0"
     glob "^7.2.0"
     node-fetch "^2.6.2"
     parse-glob "3.0.4"
