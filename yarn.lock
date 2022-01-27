@@ -739,10 +739,10 @@ hosted-git-info@^2.1.4:
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.8.tgz#7539bd4bc1e0e0a895815a2e0262420b12858488"
   integrity sha512-f/wzC2QaWBs7t9IYqB4T3sR1xviIViXJRJTWBlx2Gf3g0Xi5vI7Yy4koXQ1c9OYDGHN9sBy1DQ2AB8fqZBWhUg==
 
-htmlhint@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/htmlhint/-/htmlhint-1.1.1.tgz#7bb64ad73f785d9d11628e407936b750dcb2b1ea"
-  integrity sha512-d6k9QnjrLDl7FXNqyXHaEV5voTuaJYZ/iWkub1gMBwG40CvGJpxMbLb1vcw4eGxV1DOLNRk81WSkgHsjj6RVyA==
+htmlhint@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/htmlhint/-/htmlhint-1.1.2.tgz#759f9eae1067e1c10ee8747a563e3b884ebae726"
+  integrity sha512-3rUS4ROXjyRidMiThTXhwtAotmGvOOof3uUk1X0YWjJF63qOP0sorogfgvo+XFcp5Q6IWhiFcZqd3giCrKHg+g==
   dependencies:
     async "3.2.3"
     chalk "^4.1.2"
