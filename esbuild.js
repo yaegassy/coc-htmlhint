@@ -12,7 +12,6 @@ async function start(watch) {
     target: 'node10.12',
     //outfile: 'lib/index.js',
     outdir: 'lib',
-    logLevel: 'error',
   });
 }
 
