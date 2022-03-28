@@ -246,7 +246,7 @@ function doValidate(connection: server.IConnection, document: server.TextDocumen
       });
     }
     connection.sendDiagnostics({ uri, diagnostics });
-  } catch (err) {
+  } catch (err: any) {
     let message: string;
     if (typeof err.message === 'string' || err.message instanceof String) {
       message = <string>err.message;
